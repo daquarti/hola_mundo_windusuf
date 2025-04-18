@@ -69,8 +69,9 @@ def hello_world():
     </head>
     <body>
         <div class="message">
-            <h1>¡Gus Capo!</h1>
-            <p>✨ Viva los Agentes ✨</p>
+            <h1>Cartas a Lucilio</h1>
+            <p>✨ "La filosofía no es un espectáculo público ni se presta a la ostentación" ✨</p>
+            <p style="font-size: 1em; margin-top: 0.5em; color: #888;">- Séneca</p>
             <button onclick="showWindsurfMessage()">Click aquí</button>
             <p id="windsurf-message">Realizado con Windsurf 🏄‍♂️</p>
         </div>
