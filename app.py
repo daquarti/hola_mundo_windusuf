@@ -40,13 +40,46 @@ def hello_world():
                 margin: 0;
                 text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
             }
+            button {
+                margin-top: 2rem;
+                padding: 1rem 2rem;
+                font-size: 1.2em;
+                background: #00ff88;
+                border: none;
+                border-radius: 8px;
+                color: #1a1c20;
+                cursor: pointer;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+            button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0,255,136,0.4);
+            }
+            #windsurf-message {
+                margin-top: 1rem;
+                color: #00ff88;
+                font-size: 1.2em;
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            #windsurf-message.show {
+                opacity: 1;
+            }
         </style>
     </head>
     <body>
         <div class="message">
             <h1>¡Gus Capo!</h1>
             <p>✨ Viva los Agentes ✨</p>
+            <button onclick="showWindsurfMessage()">Click aquí</button>
+            <p id="windsurf-message">Realizado con Windsurf 🏄‍♂️</p>
         </div>
+        <script>
+            function showWindsurfMessage() {
+                const message = document.getElementById('windsurf-message');
+                message.classList.add('show');
+            }
+        </script>
     </body>
     </html>
     '''
